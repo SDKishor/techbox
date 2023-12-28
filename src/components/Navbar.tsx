@@ -7,13 +7,13 @@ export default function Navbar() {
 
     
   return (
-    <nav className='max-w-[1280px] w-screen h-[100px] flex justify-between items-center  px-10 max-sm:px-5 '>
+    <nav className='max-w-[1280px] w-screen h-[100px] flex justify-between items-center   max-sm:px-5 max-xl:px-10 '>
         <div className="h-[80px] max-sm:h-[60px]">
             <img className='h-full' src="./company logo.png" alt="" />
         </div>
         <ul className='text-xl uppercase font-bold text-white flex max-[790px]:text-lg max-sm:hidden'>
         
-          <li className='ml-10 hover:text-[#17252a93]' >
+          <li className='ml-10 hover:text-[#17252a93] ' >
           <NavLink
             to="/"
             className={({ isActive, isPending }) =>
@@ -60,7 +60,7 @@ export default function Navbar() {
             <button onClick={()=> setOpenMenu((prev)=> !prev)} className='text-4xl absolute right-5 top-5 '>
             <RiCloseFill />
             </button>
-        <li onClick={()=> setOpenMenu((prev)=> !prev)} className='my-3 hover:text-[#17252a93]' >
+        <li onClick={()=> setOpenMenu((prev)=> !prev)} className='my-3 hover:text-[#17252a93]  ' >
         <NavLink
           to="/"
           className={({ isActive, isPending }) =>

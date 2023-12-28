@@ -6,7 +6,9 @@ import Navbar from './components/Navbar'
 export default function App() {
   return (
     <>
+    <header className='w-screen flex flex-col items-center'>
     <Navbar/>
+    </header>
     <Routes>
       <Route path='/' element={<HomePage/>}/>
       <Route path='/Products' element={<ProductPage/>}/>

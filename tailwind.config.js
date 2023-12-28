@@ -5,7 +5,17 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        title: 'Moul, serif', 
+        nav: 'Open Sans, sans-serif',
+        normal: 'Ubuntu, sans-serif',
+      },
+      backgroundImage: {
+        'hero-img': "url('/hero.png')",
+        'hero-img-m': "url('/hero-m.png')",
+      }
+    },
   },
   plugins: [],
 }
